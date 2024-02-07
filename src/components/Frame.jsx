@@ -23,13 +23,13 @@ const Frame = () => {
         </div>
 
         <div className="section2">
-          <div className="card1">
-            <h2>Vehicula sitelementum tellus</h2>
-            <p>
-              Egestas id sed tellus nibhmattis lectus. <br />
+          <div className="card1" >
+            <h2 style={{color:"white" , textAlign:"left"}}>Vehicula sitelementum tellus</h2>
+            <p style={{color:"white" , textAlign:"left"}}><br />
+              Egestas id sed tellus nibhmattis lectus. <br /> 
               Commondo cras auctor est porttior ac in sit in adipiscing..
             </p>
-            <button>Learn More</button>
+            <button className="grid-btn">Learn More</button>
           </div>
           <div className="card2"></div>
         </div>
@@ -47,9 +47,9 @@ const Frame = () => {
             </p>
             <button className="grid-btn">Learn More</button>
           </div>
-          <div class="grid-item item different-color">2</div>
-          
-          <div class="grid-item item different-color">4</div>
+          <div class="grid-item item different-color"></div>
+
+          <div class="grid-item item different-color"></div>
           <div class="grid-item">
             <h2  style={{color:"white", textAlign:"left"}}>Vehicula sitelementum tellus</h2>
             <p  style={{color:"white" , textAlign:"left"}}>
@@ -67,7 +67,7 @@ const Frame = () => {
             </p>
             <button className="grid-btn">Learn More</button>
           </div>
-          <div class="grid-item different-color">6</div>
+          <div class="grid-item different-color"></div>
         </div>
 
         <div className="section3">
@@ -175,6 +175,8 @@ const Frame = () => {
               </tr>
             </table>
           </div>
+          <br />
+          <hr />
           <div>
             <footer>
               <Link>
@@ -183,8 +185,8 @@ const Frame = () => {
                   alt="logo"
                   className="footer-logo"
                   style={{
-                    height: "100px",
-                    width: "250px",
+                    height: "120px",
+                    width: "220px",
                     margin: "1px 50px 1px -923px",
                   }}
                 />

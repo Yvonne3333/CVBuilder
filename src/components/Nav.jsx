@@ -18,6 +18,8 @@ import career1 from "../assets/career2.png";
 import management1 from "../assets/management2.png";
 import travel1 from "../assets/travel2.png";
 
+import { DROPDOWN } from "../constants/index";
+
 const Nav = () => {
   const [click, setClick] = useState(false);
   const [id, setId] = useState("");
@@ -101,22 +103,41 @@ const Nav = () => {
               position: "absolute",
               top: "68px",
               backgroundColor: "pink",
-              height: "600%",
               width: "100%",
-              zIndex: "10",
-              display: "grid",
-              gridTemplateColumns: "repeat(2, 1fr)",
-              textAlign: "left",
-              padding: "20px",
+              height: "60vh",
+              zIndex: 10,
+              display: "flex",
+              justifyContent: "space-between",
             }}
           >
-            <div className="dropdown">
+            {DROPDOWN.map((item, index) => (
+              <div key={index} className="dropdown">
+                <div className="blueicon-container">
+                  <img src={item.img} alt="img" />
+
+                  <p>
+                    <strong>{item.title}</strong> <br />
+                    {item.desc}
+                  </p>
+                </div>
+                <div className="yellowicon-container">
+                  <img src={item.img2} alt="img" />
+                  <p>
+                    <strong>{item.title}</strong> <br />
+                    {item.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
+
+            {/* yvonne */}
+            {/* <div className="dropdown">
               <div className="blueicon-container">
                 <img
                   src={application1}
                   alt=""
                   className="blueicon"
-                  style={{ height: "30px",  }}
+                  style={{ height: "30px", margin: "2px 29px" }}
                 />
                 <p>
                   <strong>Application</strong> <br />
@@ -128,7 +149,7 @@ const Nav = () => {
                   src={application}
                   alt=""
                   className="yellowicon"
-                  style={{ height: "30px", margin: "2px 29px" }}
+                  style={{ height: "30px", margin: "-25px -68px" }}
                 />
                 <p>
                   <strong>Application</strong> <br />
@@ -136,16 +157,15 @@ const Nav = () => {
                 </p>
               </div>
             </div>
-
             <div className="dropdown">
               <div className="blueicon-container">
                 <img
                   src={business1}
                   alt=""
                   className="blueicon"
-                  style={{ height: "30px", margin: "2px 34px 0px 30px" }}
+                  style={{ height: "30px" }}
                 />
-               <p
+                <p
                   style={{
                     margin: "-2px 1px 2px 3px",
                   }}
@@ -181,8 +201,8 @@ const Nav = () => {
                   style={{ height: "30px", margin: "0px 20px 0px 30px " }}
                 />
                 <p>
-                  <strong>Application</strong> <br />
-                  Donec proin consequat consectetur adipiscing dolaor a.
+                  <strong>Copy</strong> <br />
+                  Aliquel amel mattis nisl fermentum ultrices tempus integer.
                 </p>
               </div>{" "}
               <div className="yellowicon-container">
@@ -208,8 +228,8 @@ const Nav = () => {
                   style={{ height: "30px", margin: "2px 32px 0px 30px" }}
                 />
                 <p>
-                  <strong>Application</strong> <br />
-                  Donec proin consequat consectetur adipiscing dolaor a.
+                  <strong>Travel</strong> <br />
+                  Ullamcorper consequal aliquam ultricies semper amet
                 </p>
               </div>
               <div className="yellowicon-container">
@@ -305,7 +325,7 @@ const Nav = () => {
                   metus diam metus malesuada risus.
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         )}
         {click && id === "2" && (

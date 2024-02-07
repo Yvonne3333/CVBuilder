@@ -1,4 +1,4 @@
-import "./App.css";
+
 import { Route, Routes } from "react-router-dom";
 import JoinUsPage from "./pages/JoinUsPage"
 import Home from "./pages/Home";

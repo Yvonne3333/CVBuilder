@@ -3,11 +3,12 @@ import "../components/cVBuilder.css";
 import logo2 from "../assets/logo2.png";
 const JoinUsPage = () => {
   return (
-    <div>
+    <div className="joinUs-Page">
       <div className="cornerimage">
         <img
           src={logo2}
           alt="logo 2"
+          className="joinusImg"
           style={{ height: "90px", margin: "2px 0px 0px 246px" }}
         />
         <p>

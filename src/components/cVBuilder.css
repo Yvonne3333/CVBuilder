@@ -1,6 +1,8 @@
 /* .NavItems {
   background: blue;
 } */
+
+/* nav items styling */
 .nav-item {
   display: flex;
   align-items: center;
@@ -27,8 +29,9 @@ div li {
 }
 
 .navbar-logo {
-  margin: 30px 90px 0 80px;
+  margin: 10px 90px 0 80px;
   width: 90px;
+  height: 100px;
   float: left;
   display: block;
   text-align: center;
@@ -42,6 +45,53 @@ div li {
   text-align: center;
   text-decoration: none;
 }
+
+.dropdown {
+  padding: 10px;
+  display: flex;
+  /* margin: 5px 110px 3px 454px;
+  width: 80%; */
+  align-items: center;
+  position: relative;
+}
+
+.yellowicon-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  /* margin: 0px -380px;
+  position: absolute; */
+}
+
+.blueicon-container {
+  display: none;
+  cursor: pointer;
+  /* margin: 2px 34px 0px 30px; */
+}
+
+.icon-container {
+  display: flex;
+}
+
+.dropdown:hover {
+  /* border-radius: 10px; */
+  background: rgba(199, 199, 199, 1);
+  /* align-items: center;
+  height: 60%;
+  width: 80%;
+  margin: 5px -879px 3px 49px;
+  transform: scale(1.2); */
+}
+
+.dropdown:hover .yellowicon-container {
+  display: none;
+}
+
+.dropdown:hover .blueicon-container {
+  display: flex;
+  align-items: center;
+}
+/* frame styling */
 
 .container {
   margin: 20px;
@@ -73,44 +123,22 @@ div li {
 }
 
 .section2 {
-  display: flex;
-  width: 400px;
-  height: 400px;
-  position: relative;
-  /* position: absolute; */
-  left: 40%;
-  margin-left: -50px;
-  top: 50%;
-  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3);
+  gap: 40px;
+  margin: 150px 250px;
 }
 
 .card1 {
-  width: 200px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   color: white;
   background-color: #1d2545;
   border-radius: 30px;
   padding: 30px;
   transition: all 0.5s ease;
-  margin: 0 0 0 -80px;
 }
-
-/* button {
-  width: 95px;
-  height: 50px;
-  background-color: #2f4f9d;
-  padding: 10px;
-  border-radius: 15px;
-  color: white;
-  
-} 
-
-button:hover {
-  border: 3px;
-  color: #1d2545;
-  border-color: #2f4f9d;
-  outline: #2f4f9d;
-}*/
 
 .button2 {
   width: 95px;
@@ -124,14 +152,14 @@ button:hover {
   cursor: pointer;
 }
 
-.button2:hover{
+.button2:hover {
   background-color: transparent;
-  color: #2f4f9d ;
+  color: #2f4f9d;
 }
 
 .card2 {
-  width: 200px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   color: white;
   background-color: #c7c7c7;
   border-radius: 30px;
@@ -204,11 +232,27 @@ button:hover {
 
 .grid-btn {
   margin: 30px 40px 30px -120px;
+  width: 95px;
+  height: 50px;
+  /* margin: -70px 0 -700px 0; */
+  background-color: #2f4f9d;
+  padding: 10px;
+  color: white;
+  border: 1px solid rgba(29, 37, 69, 1);
+  border-radius: 15px;
+  cursor: pointer;
+}
+.grid-btn:hover {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #2f4f9d;
+  font-weight: 900;
 }
 
 .grid-item:hover,
 .different-color:hover {
   transform: scale(1.1);
+  font-weight: 800;
 }
 
 .grid-container1 {
@@ -217,7 +261,6 @@ button:hover {
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   /*  Adjust the max-width as needed */
-
   margin: 150px 324px;
 }
 
@@ -236,22 +279,21 @@ button:hover {
   transform: scale(1.1);
 }
 
-/* .grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
-
-.grid-item {
-  background-color: #2f4f9d;
-  padding: 20px;
-  border-radius: 8px;
-  color: white;
-} */
-
 h4 {
   font-size: 40px;
 }
+
+hr {
+  border: 1px solid #a6a6a6;
+  margin: 0 30px 0 30px;
+}
+
+footer {
+  width: 100%;
+  padding: 10px;
+}
+
+/* Join Us Stylig */
 
 .get-started {
   display: inline-block; /* Change the display property */
@@ -305,44 +347,6 @@ tr {
   width: 20px;
   height: 20px;
   margin: -5px 0;
-}
-
-.dropdown {
-  padding: 10px;
-  display: flex;
-  margin: 5px 110px 3px 454px;
-  width: 90%;
-  align-items: center;
-  position: relative;
-}
-
-.yellowicon-container {
-  display: block;
-  margin: 0px -380px;
-  position: absolute;
-}
-
-.blueicon-container {
-  display: none;
-  /* margin: 2px 34px 0px 30px; */
-}
-
-.icon-container {
-  display: flex;
-}
-
-.dropdown:hover {
-  border-radius: 30px;
-  background: rgba(199, 199, 199, 1);
-  align-items: center;
-}
-
-.dropdown:hover .yellowicon-container {
-  display: none;
-}
-
-.dropdown:hover .blueicon-container {
-  display: inline;
 }
 
 .underline-input {
@@ -402,4 +406,53 @@ tr {
 
 .forms {
   padding: 5px;
+}
+
+@media (max-width: 200px) {
+  .joinUs-Page {
+    width: 100%;
+  }
+
+  .cornerimage {
+  }
+
+  .joinusImg {
+  }
+
+  .container-card {
+    width: 10%;
+  }
+}
+
+@media (max-width: 991px) {
+  .joinUs-Page {
+    width: 66%;
+  }
+
+  .cornerimage {
+  }
+
+  .joinusImg {
+  }
+
+  .container-card {
+    width: 100%;
+    margin: -491px 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .joinUs-Page {
+    width: 100%;
+  }
+
+  .cornerimage {
+  }
+
+  .joinusImg {
+  }
+
+  .container-card {
+    width: 10%;
+  }
 }
