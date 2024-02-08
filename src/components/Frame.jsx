@@ -186,8 +186,8 @@ const Frame = () => {
                   className="footer-logo"
                   style={{
                     height: "120px",
-                    width: "220px",
-                    margin: "1px 50px 1px -923px",
+                    width: "150px",
+                    margin: "1px 50px -20px -2px",
                   }}
                 />
               </Link>

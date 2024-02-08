@@ -3,20 +3,20 @@ import logo from "../assets/CV_Builder_Logo4x 6.png";
 import { Link } from "react-router-dom";
 import "./cVBuilder.css";
 import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
-import academic from "../assets/academics.png";
-import application from "../assets/application.png";
-import business from "../assets/business.png";
-import career from "../assets/career.png";
-import management from "../assets/management.png";
-import travel from "../assets/travel.png";
-import copy from "../assets/copy.png";
-import copy1 from "../assets/copy2.png";
-import academic1 from "../assets/academic2.png";
-import application1 from "../assets/application2.png";
-import business1 from "../assets/business2.png";
-import career1 from "../assets/career2.png";
-import management1 from "../assets/management2.png";
-import travel1 from "../assets/travel2.png";
+// import academic from "../assets/academics.png";
+// import application from "../assets/application.png";
+// import business from "../assets/business.png";
+// import career from "../assets/career.png";
+// import management from "../assets/management.png";
+// import travel from "../assets/travel.png";
+// import copy from "../assets/copy.png";
+// import copy1 from "../assets/copy2.png";
+// import academic1 from "../assets/academic2.png";
+// import application1 from "../assets/application2.png";
+// import business1 from "../assets/business2.png";
+// import career1 from "../assets/career2.png";
+// import management1 from "../assets/management2.png";
+// import travel1 from "../assets/travel2.png";
 
 import { DROPDOWN } from "../constants/index";
 
@@ -106,14 +106,19 @@ const Nav = () => {
               width: "100%",
               height: "60vh",
               zIndex: 10,
-              display: "flex",
-              justifyContent: "space-between",
+              display: "grid",
+              gridTemplateColumns: "repeat(2, 1fr)",
+              gridAutoRows: "1fr",
+              gap: "20px",
+              padding: "20px"
+              // justifyContent: "space-between",
+              
             }}
           >
             {DROPDOWN.map((item, index) => (
               <div key={index} className="dropdown">
                 <div className="blueicon-container">
-                  <img src={item.img} alt="img" />
+                  <img src={item.img} alt="img" className="img1" />
 
                   <p>
                     <strong>{item.title}</strong> <br />
@@ -121,7 +126,7 @@ const Nav = () => {
                   </p>
                 </div>
                 <div className="yellowicon-container">
-                  <img src={item.img2} alt="img" />
+                  <img src={item.img2} alt="img" className="img2" />
                   <p>
                     <strong>{item.title}</strong> <br />
                     {item.desc}

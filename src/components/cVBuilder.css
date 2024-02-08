@@ -49,11 +49,25 @@ div li {
 .dropdown {
   padding: 10px;
   display: flex;
-  /* margin: 5px 110px 3px 454px;
-  width: 80%; */
+  margin: 5px 0 3px 100px;
+  width: 80%;
   align-items: center;
   position: relative;
 }
+
+.img1,
+.img2{
+  height: 30px;
+}
+
+.blueicon {
+  margin: 2px 29px;
+}
+
+.yellowicon {
+  margin: -25px -68px;
+}
+
 
 .yellowicon-container {
   display: flex;
@@ -91,6 +105,8 @@ div li {
   display: flex;
   align-items: center;
 }
+
+
 /* frame styling */
 
 .container {
@@ -231,7 +247,7 @@ div li {
 }
 
 .grid-btn {
-  margin: 30px 40px 30px -120px;
+  margin: 30px 40px 8px -2px;
   width: 95px;
   height: 50px;
   /* margin: -70px 0 -700px 0; */
@@ -328,6 +344,10 @@ h3 {
   height: 50px;
   padding: 15px;
   border-radius: 30px;
+}
+
+.section7{
+  text-align: center;
 }
 
 table {
