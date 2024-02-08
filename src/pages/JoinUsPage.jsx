@@ -22,11 +22,12 @@ const JoinUsPage = () => {
               fontSize: "27px",
               color: "#1D2545",
               padding: "30px 10px 2px 10px",
+              textAlign:"center"
             }}
           >
             Join Cvbuilder Today
           </h5>
-          <p style={{ fontSize: "20px", padding: "2px 10px 30px 10px" }}>
+          <p style={{ fontSize: "20px", padding: "2px 10px 30px 10px", textAlign:"center" }}>
             First, a little information about you.
           </p>
         </div>
@@ -93,7 +94,7 @@ const JoinUsPage = () => {
             />
           </div>
         </div>
-        <a href="/" className="continue-btn">
+        <a href="/" className="continue-btn" >
           Continue
         </a>
       </div>

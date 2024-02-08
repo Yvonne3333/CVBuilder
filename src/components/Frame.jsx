@@ -112,7 +112,7 @@ const Frame = () => {
               ornare tincidunt.
             </h4>
             <a href="/" className="get-started">
-              Get started today
+              Get Started Today
             </a>
           </div>
 
@@ -122,7 +122,7 @@ const Frame = () => {
           </div>
           <div>
             <table>
-              <tr style={{ fontWeight: "bolder", fontSize: "18px" }}>
+              <tr >
                 <th>Donec</th>
                 <th>Eget</th>
                 <th>Molestie</th>

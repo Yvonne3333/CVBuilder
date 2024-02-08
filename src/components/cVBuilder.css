@@ -1,6 +1,3 @@
-/* .NavItems {
-  background: blue;
-} */
 
 /* nav items styling */
 .nav-item {
@@ -23,7 +20,6 @@ div li {
   display: block;
   text-align: center;
   width: 200px;
-  /* fixed width  */
   text-decoration: none;
   margin: 40px auto 0 auto;
 }
@@ -73,14 +69,11 @@ div li {
   display: flex;
   align-items: center;
   cursor: pointer;
-  /* margin: 0px -380px;
-  position: absolute; */
 }
 
 .blueicon-container {
   display: none;
   cursor: pointer;
-  /* margin: 2px 34px 0px 30px; */
 }
 
 .icon-container {
@@ -105,7 +98,6 @@ div li {
   display: flex;
   align-items: center;
 }
-
 
 /* frame styling */
 
@@ -295,6 +287,10 @@ div li {
   transform: scale(1.1);
 }
 
+h3 {
+  margin: -1px 24px 3px -735px;
+}
+
 h4 {
   font-size: 40px;
 }
@@ -333,9 +329,7 @@ footer {
   color: rgba(29, 37, 69, 1);
 }
 
-h3 {
-  margin: -1px 24px 3px -735px;
-}
+
 
 .section4 p {
   margin: -40px 24px 3px 772px;
@@ -352,6 +346,11 @@ h3 {
 
 table {
   width: 100%;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
 }
 
 th {
@@ -372,13 +371,14 @@ tr {
 .underline-input {
   width: 100%;
   border: none;
-  border-bottom: 1px solid #000; /* Set the color of the underline */
+  border-bottom: 1px solid #000; 
   outline: none;
-  font-size: 13px; /* Adjust font size as needed */
-  padding: 10px 0; /* Adjust padding as needed */
+  font-size: 13px; 
+  padding: 10px 0; 
   background: transparent;
 }
 
+/* JOINUS PAGE */
 .cornerimage {
   background: rgba(29, 37, 69, 1);
   height: 550px;
@@ -403,9 +403,9 @@ tr {
 }
 
 .continue-btn {
-  display: inline-block; /* Change the display property */
-  margin: 3% auto; /* Center horizontally, adjust the top margin as needed */
-  border: 1px solid rgba(29, 37, 69, 1); /* Specify the border style and color */
+  display: inline-block; 
+  margin: 30px 170px; 
+  border: 1px solid rgba(29, 37, 69, 1); 
   height: 50px;
   width: 250px;
   background-color: rgba(29, 37, 69, 1);
